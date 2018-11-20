@@ -1,8 +1,5 @@
-package com.kanakis.triangleChallenge.model.factory;
+package com.kanakis.triangleChallenge.model;
 
-import com.kanakis.triangleChallenge.model.ErrorMsg;
-import com.kanakis.triangleChallenge.model.Triangle;
-import com.kanakis.triangleChallenge.model.TriangleType;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -22,7 +19,7 @@ public class TriangleFactoryTest {
 
     @Test
     public void shouldReturnIsosceles() {
-        Triangle tr = TriangleFactory.createTriangleByLength(2, 2, 4);
+        Triangle tr = TriangleFactory.createTriangleByLength(5, 5, 3);
         assertTrue(tr.getType() == TriangleType.ISOSCELES);
     }
 

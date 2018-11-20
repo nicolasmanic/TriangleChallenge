@@ -7,7 +7,7 @@ package com.kanakis.triangleChallenge.model;
  * <li><b>Isosceles:</b> only two sides have the same length.</li>
  * <li><b>Scalene:</b> all sides have different lengths.</li>
  * </ul>
- * <p>
+ *
  * TODO: add implNote
  */
 public enum TriangleType {
