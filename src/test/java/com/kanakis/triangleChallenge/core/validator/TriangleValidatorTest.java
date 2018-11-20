@@ -1,6 +1,6 @@
-package com.kanakis.triangleChallenge.model.validator;
+package com.kanakis.triangleChallenge.core.validator;
 
-import com.kanakis.triangleChallenge.model.ErrorMsg;
+import com.kanakis.triangleChallenge.core.ErrorMsg;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

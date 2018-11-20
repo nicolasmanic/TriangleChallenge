@@ -1,4 +1,4 @@
-package com.kanakis.triangleChallenge.model;
+package com.kanakis.triangleChallenge.core.model;
 
 /**
  * TriangleType defines the 3 types a geometrical triangle can have.

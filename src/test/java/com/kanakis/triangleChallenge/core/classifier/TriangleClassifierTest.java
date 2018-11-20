@@ -1,8 +1,8 @@
-package com.kanakis.triangleChallenge.model.classifier;
+package com.kanakis.triangleChallenge.core.classifier;
 
-import com.kanakis.triangleChallenge.model.ErrorMsg;
-import com.kanakis.triangleChallenge.model.TriangleType;
-import com.kanakis.triangleChallenge.model.validator.Validator;
+import com.kanakis.triangleChallenge.core.ErrorMsg;
+import com.kanakis.triangleChallenge.core.model.TriangleType;
+import com.kanakis.triangleChallenge.core.validator.Validator;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

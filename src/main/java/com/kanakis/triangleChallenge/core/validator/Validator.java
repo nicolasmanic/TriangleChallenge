@@ -1,4 +1,4 @@
-package com.kanakis.triangleChallenge.model.validator;
+package com.kanakis.triangleChallenge.core.validator;
 
 /**
  * Validator interface is used for every kind of validation a shape may need.

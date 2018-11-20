@@ -1,4 +1,4 @@
-package com.kanakis.triangleChallenge.model.validator;
+package com.kanakis.triangleChallenge.core.validator;
 
 /**
  * @implNote While interface have many advantages they cannot contain non public methods.

@@ -1,4 +1,4 @@
-package com.kanakis.triangleChallenge.model;
+package com.kanakis.triangleChallenge.core.model;
 
 /**
  * An equilateral triangle has all sides the same length.

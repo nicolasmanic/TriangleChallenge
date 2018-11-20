@@ -1,9 +1,10 @@
-package com.kanakis.triangleChallenge.model.classifier;
+package com.kanakis.triangleChallenge.core.classifier;
 
-import com.kanakis.triangleChallenge.model.TriangleType;
+import com.kanakis.triangleChallenge.core.model.Triangle;
+import com.kanakis.triangleChallenge.core.model.TriangleType;
 
 /**
- * TriangleClassifier classifies {@link com.kanakis.triangleChallenge.model.Triangle} based on different criteria.
+ * TriangleClassifier classifies {@link Triangle} based on different criteria.
  * Currently only length-based classification is implemented.
  */
 public interface TriangleClassifier {

@@ -1,8 +1,8 @@
-package com.kanakis.triangleChallenge.model;
+package com.kanakis.triangleChallenge.core.model;
 
-import com.kanakis.triangleChallenge.model.classifier.TriangleClassifier;
-import com.kanakis.triangleChallenge.model.classifier.TriangleClassifierImpl;
-import com.kanakis.triangleChallenge.model.validator.TriangleValidator;
+import com.kanakis.triangleChallenge.core.classifier.TriangleClassifier;
+import com.kanakis.triangleChallenge.core.classifier.TriangleClassifierImpl;
+import com.kanakis.triangleChallenge.core.validator.TriangleValidator;
 
 /**
  * TriangleFactory is responsible for creating the different of subclasses of {@link Triangle}

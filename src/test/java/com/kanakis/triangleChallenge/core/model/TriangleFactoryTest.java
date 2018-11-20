@@ -1,5 +1,6 @@
-package com.kanakis.triangleChallenge.model;
+package com.kanakis.triangleChallenge.core.model;
 
+import com.kanakis.triangleChallenge.core.ErrorMsg;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
