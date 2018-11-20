@@ -7,9 +7,9 @@ public class TriangleClassifierImpl implements TriangleClassifier {
     private Validator triangleValidator;
 
     /**
-     * @implNote TriangleClassifierImpl constructor takes a {@link Validator} as argument. Using dependency injection
-     * TriangleClassifierImpl is not tightly coupled with the validation rules, so any future changes in the validation
-     * process will not change the classification implementation.
+     * @implNote TriangleClassifierImpl constructor takes a {@link Validator} instance as argument.
+     * Using dependency injection TriangleClassifierImpl is not tightly coupled with the validation rules, so any future
+     * changes in the validation process will not change the classification implementation.
      */
     public TriangleClassifierImpl(Validator triangleValidator) {
         this.triangleValidator = triangleValidator;

@@ -4,10 +4,11 @@ package com.kanakis.triangleChallenge.model;
  * Error messages.
  *
  * @implNote This class specifies the possible error messages that might occur when creating a new shape
- * based on the length of its sides . We use a final class with a private constructor,  making it impossible to
- * instantiate or subclass the class. We can also use an ENUM.
+ * based on the length of its sides. We use a final class with a private constructor,  making it impossible to
+ * instantiate or subclass the class. We could also use an ENUM.
+ *
  * @see <a href="https://en.wikipedia.org/wiki/Triangle_inequality">https://en.wikipedia.org/wiki/Triangle_inequality</a>
- * <p>
+ *
  * TODO: this isn't internationalised do I need it to be?
  */
 public final class ErrorMsg {

@@ -5,22 +5,24 @@ import com.kanakis.triangleChallenge.model.ErrorMsg;
 /**
  * TriangleValidator is responsible for validating triangle shapes.
  *
- * @implNote It extends {@link AbstractValidator} in order to have access to {@link AbstractValidator#validLengths(int[])} and
+ * @implNote It extends {@link AbstractValidator} in order to have access to {@link AbstractValidator#validLengths(int[])}
+ * and implements {@link Validator} interface.
  */
 public class TriangleValidator extends AbstractValidator {
 
     /**
-     * validate if the integer array of lengths is valid for creating a triangle
-     * <p>
-     * There are 3 cases it might fail
+     * Validate if the integer array of lengths is valid for creating a triangle
+     *
+     * There are 3 cases it might fail:
      * <ul>
-     * <li>lengths array does not hold 3 integers</li>
-     * <li>lengths arrays contains at least one length less tha 1 </li>
-     * <li>lengths arrays fail Inequality Theorem Check</li>
+     * <li>lengths array does not contain 3 integers</li>
+     * <li>lengths array contains at least one length less than 1</li>
+     * <li>lengths fail Inequality Theorem check</li>
      * </ul>
      *
      * @param lengths The length of each side of the shape.
      * @throws IllegalArgumentException in case validation fails.
+     *
      */
     @Override
     public void validate(int[] lengths) {

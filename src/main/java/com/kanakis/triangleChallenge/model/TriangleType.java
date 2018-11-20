@@ -8,10 +8,8 @@ package com.kanakis.triangleChallenge.model;
  * <li><b>Scalene:</b> all sides have different lengths.</li>
  * </ul>
  *
- * TODO: add implNote
  */
 public enum TriangleType {
-    //TODO: move to a property file
     EQUILATERAL("Equilateral"),
     ISOSCELES("Isosceles"),
     SCALENE("Scalene");
@@ -22,7 +20,6 @@ public enum TriangleType {
         this.type = type;
     }
 
-    //TODO: Will I need a str?
     public String getTypeName() {
         return type;
     }

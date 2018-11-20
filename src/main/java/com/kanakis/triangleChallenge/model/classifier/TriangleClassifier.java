@@ -9,7 +9,7 @@ import com.kanakis.triangleChallenge.model.TriangleType;
 public interface TriangleClassifier {
     /**
      * Classifies the triangle based on the lengths of its 3 sides.
-     * <p>
+     *
      * <ul>
      * <li><b>Equilateral:</b> all sides have the same length.</li>
      * <li><b>Isosceles:</b> only two sides have the same length.</li>
@@ -19,7 +19,7 @@ public interface TriangleClassifier {
      * @param sideA length of side A
      * @param sideB length of side B
      * @param sideC length of side C
-     * @return TriangleType enum type of triangle.
+     * @return type of triangle.
      * @throws IllegalArgumentException in case sides lengths validation fails.
      * @see TriangleType
      */

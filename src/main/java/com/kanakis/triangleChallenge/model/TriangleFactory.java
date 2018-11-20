@@ -11,6 +11,7 @@ public class TriangleFactory {
 
     /**
      * @implNote TriangleClassifier takes an instance of {@link TriangleValidator}
+     * @see TriangleValidator
      */
     private static final TriangleClassifier classifier = new TriangleClassifierImpl(new TriangleValidator());
 
@@ -21,9 +22,10 @@ public class TriangleFactory {
      * @param lengthA length of side A
      * @param lengthB length of side B
      * @param lengthC length of side C
-     * @return Triangle
+     * @return triangle object
      * @throws IllegalArgumentException in case sides lengths validation fails.
-     * @implNote The classification logic could be integrated in the factory method but this will violate the
+     *
+     * @implNote The classification logic could be integrated in the factory method but this would violate the
      * single responsibility principle, visually clutter the method, and harm future extensibility.
      */
     public static Triangle createTriangleByLength(int lengthA, int lengthB, int lengthC) {
