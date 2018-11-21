@@ -56,24 +56,23 @@ java -jar TriangleChallenge.jar FILE NAME.csv
 ## Design Decisions
 
 The application was developed with TDD and SOLID principles in mind. In order
-to showcase those principles no popular frameworks were not used.
+to showcase those principles no popular frameworks were used.
 
 As described in the Build & Run section, there are 2 ways to interact with the application
 either via the console or via a csv file. Both are implementations of a common interface
 for future extensibility.
 
-To create a new triangle you need to access the ```TriangleFactory```.
+To create a new triangle you need to use the ```TriangleFactory```.
 The factory will create a classifier ```TriangleClassifier``` and inject a validation
 strategy ```TriangleValidator``` into the classifier in order to validate
-if input is correct. Finally if no validation error occur the factory based
+if input is correct. Finally if no validation error occur the factory, based
 on the result of the classifier will return the appropriate ```Triangle```
 subclass (```Equilateral, Isosceles, Scalene```).
 
 Finally the project used Travis-CI for continues integration and Codecov for
 code coverage analysis.
 
-
 **Note:** To distinguishes between actual javadoc and explanation for the
 design decisions that were taken the ```@impNote``` annotation was
 used in source code. For further explanation on why various techniques were
-used please search for the corresponding ```@impNote``` annotation
+used please search for the corresponding ```@impNote``` annotation.
