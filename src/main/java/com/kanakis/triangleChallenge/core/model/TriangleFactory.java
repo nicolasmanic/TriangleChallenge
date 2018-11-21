@@ -5,19 +5,22 @@ import com.kanakis.triangleChallenge.core.classifier.TriangleClassifierImpl;
 import com.kanakis.triangleChallenge.core.validator.TriangleValidator;
 
 /**
- * TriangleFactory is responsible for creating the different of subclasses of {@link Triangle}
+ * TriangleFactory is responsible for creating the different subclasses of {@link Triangle}.
+ * It's the only way an external client can instantiate an {@link Triangle} object and handles all the logic for
+ * validating and classifying a set of lengths in order to generate the correct triangle type.
  */
 public class TriangleFactory {
 
     /**
-     * @implNote TriangleClassifier takes an instance of {@link TriangleValidator}
+     * @implNote TriangleClassifier takes an instance of {@link TriangleValidator} and is used as a validation
+     * strategy before the classification.
      * @see TriangleValidator
      */
     private static final TriangleClassifier classifier = new TriangleClassifierImpl(new TriangleValidator());
 
     /**
      * createTriangleByLength method uses the {@link TriangleClassifier} to determine what type of {@link Triangle}
-     * should be created based on the provided lengths.
+     * instance should be created based on the provided lengths.
      *
      * @param lengthA length of side A
      * @param lengthB length of side B
@@ -38,8 +41,8 @@ public class TriangleFactory {
             case SCALENE:
                 return new Scalene(lengthA, lengthB, lengthC);
             default:
-                //Since classifier uses TriangleValidator to validate the inputs, so it should not be possible
-                //to reach this code, because a IllegalArgumentException should have been thrown prior.
+                //Since classifier uses TriangleValidator to validate the inputs, it should not be possible
+                //to reach this code, a IllegalArgumentException should have been thrown prior.
                 throw new RuntimeException("Triangle instantiation failed for unknown reasons");
         }
     }

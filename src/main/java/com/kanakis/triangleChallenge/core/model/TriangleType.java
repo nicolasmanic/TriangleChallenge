@@ -1,7 +1,7 @@
 package com.kanakis.triangleChallenge.core.model;
 
 /**
- * TriangleType defines the 3 types a geometrical triangle can have.
+ * Defines the 3 types a geometrical triangle can have.
  * <ul>
  * <li><b>Equilateral:</b> all sides have the same length.</li>
  * <li><b>Isosceles:</b> only two sides have the same length.</li>

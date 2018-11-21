@@ -12,7 +12,7 @@ public class TriangleValidator extends AbstractValidator {
 
     /**
      * Validate if the integer array of lengths is valid for creating a triangle
-     *
+     * <p>
      * There are 3 cases it might fail:
      * <ul>
      * <li>lengths array does not contain 3 integers</li>
@@ -22,7 +22,6 @@ public class TriangleValidator extends AbstractValidator {
      *
      * @param lengths The length of each side of the shape.
      * @throws IllegalArgumentException in case validation fails.
-     *
      */
     @Override
     public void validate(int[] lengths) {
@@ -36,6 +35,11 @@ public class TriangleValidator extends AbstractValidator {
             throw new IllegalArgumentException(ErrorMsg.INVALID_TRIANGLE);
     }
 
+    /**
+     * Based on Triangle Inequality Theorem.
+     *
+     * @see <a href="https://en.wikipedia.org/wiki/Triangle_inequality">https://en.wikipedia.org/wiki/Triangle_inequality</a>
+     */
     private boolean triangleInequalityCheck(int[] lengths) {
         int a = lengths[0];
         int b = lengths[1];

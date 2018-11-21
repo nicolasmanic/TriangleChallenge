@@ -10,8 +10,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 /**
- * The entry point of the app. If no argument is passed then used is required to enter 3 integers using the console.
- * If a argument is passed the program assumes that this is a valid path for a csv file and tries to load the data
+ * The entry point of the app. If no argument is passed then user is required to enter 3 integers using the console.
+ * If a argument is passed the program assumes that is a valid path for a csv file and attempts to load the data
  * from the file. Both implementations print the resulted triangles at the console.
  */
 public class App {

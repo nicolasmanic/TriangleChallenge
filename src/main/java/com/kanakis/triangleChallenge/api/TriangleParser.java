@@ -16,8 +16,9 @@ public interface TriangleParser {
      *
      * @param in Reader instance
      * @return List of {@link Triangle}
-     * @throws IOException              propagates Reader IOException when I/O error occurs
+     * @throws IOException propagates Reader IOException when I/O error occurs
      * @throws IllegalArgumentException for invalid lengths
+     *
      * @implNote The input of parser is a Reader object, this increases the flexibility of the API, as the end user
      * can pass any type of Reader instance, it also makes the code more testable.
      */

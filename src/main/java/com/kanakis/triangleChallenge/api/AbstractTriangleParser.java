@@ -5,8 +5,8 @@ import com.kanakis.triangleChallenge.core.model.Triangle;
 import com.kanakis.triangleChallenge.core.model.TriangleFactory;
 
 /**
- * @implNote AbstractTriangleParser is used as a "Skeletal" class in order to hide common method for all implementations
- * of {@link TriangleParser} interface
+ * @implNote AbstractTriangleParser is used as a "Skeletal" class in order to hide common methods used by the concrete
+ * implementations of {@link TriangleParser} interface
  */
 abstract class AbstractTriangleParser implements TriangleParser {
 

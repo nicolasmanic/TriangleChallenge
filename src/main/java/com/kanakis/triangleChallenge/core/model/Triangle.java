@@ -1,14 +1,14 @@
 package com.kanakis.triangleChallenge.core.model;
 
 /**
- * Triangle is the base abstract class that represents a geometrical triangle shape, represented by the length of it's
+ * Triangle is the base abstract class that represents a geometrical triangle shape, represented by the length of its
  * 3 sides.
  *
  * @implNote Triangle is an abstract class with 3 concrete subclasses. The subclasses will be used in the static factory
  * {@link TriangleFactory} for instantiating a Triangle instance. The constructor is package private and accessible
- * only within this package, the only appropriate way to create a new instance is from {@link TriangleFactory}.
- * There are various advantages of static factory methods over constructor the main reason in this case is that they can
- * return an object of any subtype of their return type.
+ * only within this package, the only appropriate way to create a new instance is by using the {@link TriangleFactory}.
+ * There are various advantages of static factory methods over constructor the main reason it was chosen in this case is
+ * that they can return an object of any subtype of their return type.
  */
 public abstract class Triangle {
 
@@ -25,14 +25,14 @@ public abstract class Triangle {
     }
 
     /**
-     * getType returns a TriangleType object that represents the triangles type.
-     *
-     * <p> Triangles can be classified according to the length of their sides in 3 categories:
-     *  <ul>
-     *      <li>Equilateral</li>
-     *      <li>Isosceles</li>
-     *      <li>Scalene</li>
-     *  </ul>
+     * Returns a {@link TriangleType) enum that represents the triangles type.
+     * <p>
+     * Triangles can be classified according to the length of its sides in 3 categories:
+     * <ul>
+     * <li>Equilateral</li>
+     * <li>Isosceles</li>
+     * <li>Scalene</li>
+     * </ul>
      * </p>
      *
      * @return the type of triangle.
