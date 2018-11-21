@@ -34,14 +34,14 @@ public class TriangleFactoryTest {
     public void shouldThrowIllegalArgumentExceptionForNonPositiveLength() {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
-        TriangleFactory.createTriangleByLength(0, 4, 5);
+        TriangleFactory.createTriangleByLength(4, 0, 5);
     }
 
     @Test
     public void shouldThrowIllegalArgumentExceptionForNegativeLength() {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
-        TriangleFactory.createTriangleByLength(-1, 4, 5);
+        TriangleFactory.createTriangleByLength(5, 4, -3);
 
     }
 

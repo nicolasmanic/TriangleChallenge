@@ -26,11 +26,24 @@ public class TriangleValidatorTest {
     }
 
     @Test
-    //todo: add more test cases for 0 in different positions
-    public void shouldThrowIllegalArgumentExceptionForNonPositiveLength() {
+    public void shouldThrowIllegalArgumentExceptionForNonPositiveLengthAsFirstArgument() {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
         validator.validate(new int[]{0, 2, 2});
+    }
+
+    @Test
+    public void shouldThrowIllegalArgumentExceptionForNonPositiveLengthAsSecondArgument() {
+        expectedException.expect(IllegalArgumentException.class);
+        expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
+        validator.validate(new int[]{2, -2, 2});
+    }
+
+    @Test
+    public void shouldThrowIllegalArgumentExceptionForNonPositiveLengthAsThirdArgument() {
+        expectedException.expect(IllegalArgumentException.class);
+        expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
+        validator.validate(new int[]{2, 2, -10});
     }
 
     @Test

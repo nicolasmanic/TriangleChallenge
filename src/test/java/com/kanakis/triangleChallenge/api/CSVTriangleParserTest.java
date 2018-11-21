@@ -62,4 +62,10 @@ public class CSVTriangleParserTest {
         expectedException.expectMessage(ErrorMsg.NON_POSITIVE_LENGTH);
         tp.parse(sr);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowIllegalArgumentExceptionForNonNumericalInput() throws Exception {
+        StringReader sr = new StringReader("a,b,c");
+        tp.parse(sr);
+    }
 }
